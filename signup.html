@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Sign Up - WebApp</title>
+</head>
+<body>
+
+    <div class="form-container">
+
+        <div class="sign-up-head">
+            <a href="/index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+            <h1 class="hero-heading">
+                Sign Up
+            </h1>
+        </div>
+
+        <form id="basic-form" action="/home.html">
+            <div class="form-fildset">
+                <label for="Fname">FIRST NAME</label><br>
+                <input type="text" name="Fname" id="Fname" placeholder="First Name" class="input-fields"><br><br>
+                <label for="Fname">LAST NAME</label><br>
+                <input type="text" name="lname" id="lname" placeholder="Last Name" class="input-fields"><br><br>
+                <label for="Fname">EMAIL</label><br>
+                <input type="text" name="email" id="email" placeholder="Email" class="input-fields"><br><br>
+                <label for="Fname">DATE OF BIRTH</label><br>
+                <input type="date" name="dob" id="dob" placeholder="Date Of Birth"  class="input-fields"><br><br>
+                <label for="Fname">CREATE PASSCODE </label><br>
+                <input type="Password" name="pass" id="pass" placeholder="Password"  class="input-fields"><br><br>
+                <label for="Fname">REPEAT PASSCODE </label><br>
+                <input type="Password" name="Rpass" placeholder="Confirm Password" id="Rpass" class="input-fields"><br><br>
+                <input type="checkbox" name="termsandservices" id="termsandservice"><span class="checkbox-class-span">I agree to terms and services</span><br>
+                <input type="checkbox" name="rememberpass" id="rememberpass" class="checkbox-class"><span class="checkbox-class-span">Remember Password</span>
+            </div>
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
