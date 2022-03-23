@@ -8,6 +8,9 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
+.form-container {
+    margin-top: 80px !important;
+}
 .sign-up-head {
     display: flex;
     justify-content: space-between;
