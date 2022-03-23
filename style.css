@@ -95,6 +95,12 @@ input#rememberpass {
         width: 100% !important;
     }
 }
+input#termsandservice {
+    display: inline !important;
+}
+input#rememberpass {
+    display: inline !important;
+}
 .social-login-btn {
     border: 1px solid #0000003b ;
     width: 100%;
