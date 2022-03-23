@@ -21,6 +21,9 @@ h1.hero-heading {
 .form-fildset {
     display: block;
 }
+div#filterBtnContainer {
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
 label {
     margin-top: 20px;
     font-size: 13px;
