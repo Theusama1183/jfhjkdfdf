@@ -259,6 +259,7 @@ img.avatar {
 
 a {
     color: #dbdbdb !important;
+    text-decoration: none;
 }
 input#search {
    width: 100%;
