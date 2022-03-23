@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Shop - WebApp</title>
+</head>
+<body>
+    <div class="home-section">
+
+        <header>
+            <div class="header-container">
+                <i onclick="menuOpenHide()" class="fa-solid fa-bars"></i>
+                <h1 class="logo-heading">Shop</h1>
+                <img src="profile-avtar.jpg" class="avatar" onclick="userOpenHide()" alt="">
+            </div>
+            <div id="userMetaContainer">
+                <a class="menu-link" href="/profile.html">Profile</a><br>
+                    <a class="menu-link" href="/chat.html">Message</a><br>
+                    <a class="menu-link" href="/index.html">Logout</a><br>
+            </div>
+            <div id="menu-container">
+                <div class="menu-fff">
+                    <h1 class="logo-heading">WebApp</h1>
+                    <i  onclick="menuOpenHide()"class="fa-solid fa-xmark"></i>
+                </div>  
+                <div class="menus">
+                    <a class="menu-link" href="/home.html">Home</a><br>
+                    <a class="menu-link" href="/about.html">About</a><br>
+                    <a class="menu-link" href="/blog.html">Blog</a><br>
+                    <a class="menu-link" href="/shop.html">Shop</a><br>
+                    <a class="menu-link" href="/service.html">Service</a><br>
+                </div>
+                <div class="btn-container">
+                    <a href="contact.html"> <button class="contact-btn">Contact</button> </a>
+                </div>
+                
+            </div>
+        </header>
+        <div class="search-container">
+            <div class="search-input">
+                <input type="text" name="search" class="search" id="search" placeholder="search"><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="filter-btn-container">
+                <i onclick="filterBtn()" class="fa-solid fa-filter"></i>
+            </div>
+        </div>
+
+        <div id="filterBtnContainer">
+            <h1 class="filter-heading"> Filters</h1>
+            <i onclick="filterBtn()" class="fa-solid fa-xmark fj"></i>
+            <div class="brand">
+                <h4 class="filter-sub-headings"> Brand </h4>
+                <div class="col text-center box">
+                    <div class="brand-col">
+                        <input checked type="checkbox" name='Levis' id="Levis">
+                        <label for="Levis" id="Levis">Levis</label>
+                    </div>
+                    <div class="brand-col">
+                        <input type="checkbox" name='Tommy' id="Tommy">
+                        <label for="Tommy" id="Tommy">Tommy Hilfiger</label>
+                    </div>
+                    <div class="brand-col">
+                        <input type="checkbox" name='Polo' id="Polo">
+                        <label for="Polo" id="Polo">U.S. Polo Assn</label>
+                    </div>
+                    <div class="brand-col">
+                        <input type="checkbox" name='FILA' id="FILA">
+                        <label for="FILA" id="FILA">FILA</label>
+                    </div>
+                    <div class="brand-col">
+                        <input type="checkbox" name='GAP' id="GAP">
+                        <label for="GAP" id="GAP">GAP</label>
+                    </div>
+                    <div class="brand-col">
+                        <input type="checkbox" name='Roadster' id="Roadster">
+                        <label for="Roadster" id="Roadster">Roadster</label>
+                    </div>
+                    <div class="brand-col">
+                        <input type="checkbox" name='Jack' id="Jack">
+                        <label for="Jack" id="Jack">Jack & Jones</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="price">
+                <h4 class="filter-sub-headings"> Price </h4>
+                <input type="range" min="5" max="6000" value="3000" step="100" class="slider" id="myInput" oninput="myRange()">
+                <p id="priceRange"></p>
+            </div>
+            <div class="color">
+                <h4 class="filter-sub-headings"> Color </h4>
+                <div class="color-container">
+                    <div class="color-col">
+                        <input checked type="checkbox" id="Red" class="color-checkbox" name='Red' id="Red">
+                        <label for="Red" id="Red"></label>
+                    </div>
+                    <div class="color-col">
+                        <input type="checkbox" id="Black" class="color-checkbox" name='Black' id="Black">
+                        <label for="Black" id="Black"></label>
+                    </div>
+                    <div class="color-col">
+                        <input type="checkbox" id="Blue" class="color-checkbox" name='Blue' id="Blue">
+                        <label for="Blue" id="Blue"></label>
+                    </div>
+                    <div class="color-col">
+                        <input type="checkbox" id="Brown" class="color-checkbox" name='Brown' id="Brown">
+                        <label for="Brown" id="Brown"></label>
+                    </div>
+                    <div class="color-col">
+                        <input type="checkbox" id="Gray" class="color-checkbox" name='Gray' id="Gray">
+                        <label for="Gray" id="Gray"></label>
+                    </div>
+                    <div class="color-col">
+                        <input type="checkbox" id="Green" class="color-checkbox" name='Green' id="Green">
+                        <label for="Green" id="Green"></label>
+                    </div>           
+            </div>
+        </div>
+       <div class="fliter-btn-container">
+           <button type="submit" class="Filter-btn">Apply Filters</button>
+       </div>
+
+        <div class="products">
+            <div class="itemP pro1 ">
+                <div class="contff">
+                    <h4 class="p-status">New </h4>
+                    <i class="fa-regular fa-heart colored"></i>
+                </div>
+                <a href="#"><h4 class="p-title">
+                    Solid Short Sleeves Tee Shirt
+                </h4></a>
+                <h4 class="p-price">
+                    $10
+                </h4>
+            </div>
+
+            <div class="itemP pro2 ">
+                <div class="contff">
+                    <h4 class="p-status">New </h4>
+                    <i class="fa-regular fa-heart colored"></i>
+                </div>
+                <a href="#"><h4 class="p-title">
+                    Solid Short Sleeves Tee Shirt
+                </h4></a>
+                <h4 class="p-price">
+                    $10
+                </h4>
+            </div>
+
+            <div class="itemP pro3 ">
+                <div class="contff">
+                    <h4 class="p-status">New </h4>
+                    <i class="fa-regular fa-heart colored"></i>
+                </div>
+                <a href="#"><h4 class="p-title">
+                    Solid Short Sleeves Tee Shirt
+                </h4></a>
+                <h4 class="p-price">
+                    $10
+                </h4>
+            </div>
+
+            <div class="itemP pro4 ">
+                <div class="contff">
+                    <h4 class="p-status">New </h4>
+                    <i class="fa-regular fa-heart colored"></i>
+                </div>
+                <a href="#"><h4 class="p-title">
+                    Solid Short Sleeves Tee Shirt
+                </h4></a>
+                <h4 class="p-price">
+                    $10
+                </h4>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+        <div class="menu-bar">
+            <div class="hero-container">
+                <a class="home-menu" href="/home.html"><i class="fa-solid fa-house"></i></a>
+                <a class="favourite-menu" href="/favourite.html"><i class="fa-solid fa-heart"></i></a>
+                <a class="categories-menu" href="/categories.html"><i class="fa-solid fa-table-cells-large"></i></a>
+                <a class="cart-menu" href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="account-menu" href="/account.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+        
+
+       
+<script src="script.js"></script>
+<style>
+a.home-menu {
+    width: 20px;
+    height: 20px;
+    background: #ff7c7e;
+    padding: 10px;
+    color: white !important;
+    margin-top: -30px;
+    border-radius: 50%;
+    border: 5px solid #eff0f4;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+
+</body>
+</html>
