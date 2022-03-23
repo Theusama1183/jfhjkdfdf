@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Home - WebApp</title>
+</head>
+<body>
+    <div class="home-section">
+
+        <header>
+            <div class="header-container">
+                <i onclick="menuOpenHide()" class="fa-solid fa-bars"></i>
+                <h1 class="logo-heading">Favourite</h1>
+                <img src="profile-avtar.jpg" class="avatar" onclick="userOpenHide()" alt="">
+            </div>
+            <div id="userMetaContainer">
+                <a class="menu-link" href="/profile.html">Profile</a><br>
+                    <a class="menu-link" href="/chat.html">Message</a><br>
+                    <a class="menu-link" href="/logout.html">Logout</a><br>
+            </div>
+            <div id="menu-container">
+                <div class="menu-fff">
+                    <h1 class="logo-heading">WebApp</h1>
+                    <i  onclick="menuOpenHide()"class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="menus">
+                    <a class="menu-link" href="/home.html">Home</a><br>
+                    <a class="menu-link" href="/about.html">About</a><br>
+                    <a class="menu-link" href="/blog.html">Blog</a><br>
+                    <a class="menu-link" href="/shop.html">Shop</a><br>
+                    <a class="menu-link" href="/service.html">Service</a><br>
+                </div>
+                <div class="btn-container">
+                    <a href="contact.html"> <button class="contact-btn">Contact</button> </a>
+                </div>
+                
+            </div>
+        </header>
+        <div class="menu-bar">
+            <div class="hero-container">
+                <a class="home-menu" href="/home.html"><i class="fa-solid fa-house"></i></a>
+                <a class="favourite-menu" href="/favourite.html"><i class="fa-solid fa-heart"></i></a>
+                <a class="categories-menu" href="/categories.html"><i class="fa-solid fa-table-cells-large"></i></a>
+                <a class="cart-menu" href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="account-menu" href="/account.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+        
+
+       
+<script src="script.js"></script>
+<style>
+a.favourite-menu {
+    width: 20px;
+    height: 20px;
+    background: #ff7c7e;
+    padding: 10px;
+    color: white !important;
+    margin-top: -30px;
+    border-radius: 50%;
+    border: 5px solid #eff0f4;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+</style>
+</body>
+</html>
