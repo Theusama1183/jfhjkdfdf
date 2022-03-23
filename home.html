@@ -12,6 +12,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <title>Home - WebApp</title>
 </head>
 <body>
@@ -26,13 +31,13 @@
             <div id="userMetaContainer">
                 <a class="menu-link" href="/profile.html">Profile</a><br>
                     <a class="menu-link" href="/chat.html">Message</a><br>
-                    <a class="menu-link" href="/logout.html">Logout</a><br>
+                    <a class="menu-link" href="/index.html">Logout</a><br>
             </div>
             <div id="menu-container">
                 <div class="menu-fff">
                     <h1 class="logo-heading">WebApp</h1>
                     <i  onclick="menuOpenHide()"class="fa-solid fa-xmark"></i>
-                </div>
+                </div>  
                 <div class="menus">
                     <a class="menu-link" href="/home.html">Home</a><br>
                     <a class="menu-link" href="/about.html">About</a><br>
@@ -132,8 +137,81 @@
 
     </div>
         <div class="slide-container">
-            <img src="slide1.webp" alt="">
+            <div class="owl-carousel owl-theme">
+                <div class="item"> <img src="slide1.webp" alt=""></div>
+                <div class="item"> <img src="slide2.webp" alt=""></div>
+                <div class="item"> <img src="slide3.webp" alt=""></div>
+            </div>
         </div>
+
+        <div class="jfkd">
+            <h2 class="fgdg">Popular</h2>
+           <a href="shop.html"><button class="view-all-btn">View All</button></a> 
+        </div>
+
+        <div class="products">
+            <div class="itemP pro1 ">
+                <div class="contff">
+                    <h4 class="p-status">New </h4>
+                    <i class="fa-regular fa-heart colored"></i>
+                </div>
+                <a href="#"><h4 class="p-title">
+                    Solid Short Sleeves Tee Shirt
+                </h4></a>
+                <h4 class="p-price">
+                    $10
+                </h4>
+            </div>
+
+            <div class="itemP pro2 ">
+                <div class="contff">
+                    <h4 class="p-status">New </h4>
+                    <i class="fa-regular fa-heart colored"></i>
+                </div>
+                <a href="#"><h4 class="p-title">
+                    Solid Short Sleeves Tee Shirt
+                </h4></a>
+                <h4 class="p-price">
+                    $10
+                </h4>
+            </div>
+
+            <div class="itemP pro3 ">
+                <div class="contff">
+                    <h4 class="p-status">New </h4>
+                    <i class="fa-regular fa-heart colored"></i>
+                </div>
+                <a href="#"><h4 class="p-title">
+                    Solid Short Sleeves Tee Shirt
+                </h4></a>
+                <h4 class="p-price">
+                    $10
+                </h4>
+            </div>
+
+            <div class="itemP pro4 ">
+                <div class="contff">
+                    <h4 class="p-status">New </h4>
+                    <i class="fa-regular fa-heart colored"></i>
+                </div>
+                <a href="#"><h4 class="p-title">
+                    Solid Short Sleeves Tee Shirt
+                </h4></a>
+                <h4 class="p-price">
+                    $10
+                </h4>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
         <div class="menu-bar">
             <div class="hero-container">
                 <a class="home-menu" href="/home.html"><i class="fa-solid fa-house"></i></a>
@@ -163,5 +241,6 @@ a.home-menu {
     align-items: center;
 }
 </style>
+
 </body>
 </html>
